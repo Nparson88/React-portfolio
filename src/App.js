@@ -1,17 +1,21 @@
 import './App.css';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header/header';
-
 import Footer from './components/Footer/footer';
-
+import home from './pages/Home'
+import projects from './pages/Projects'
 function App() {
   return (
     <div className="App">
+     <Router>
      <Header/>
-  
-    
-     <Footer/>
-  
+    <Switch>
+    <Route exact path = "/" component={home}/>
+    <Route exact path = "/projects" component={projects}/>
 
+    </Switch> 
+  <Footer/>
+</Router>
     </div>
   );
 }
