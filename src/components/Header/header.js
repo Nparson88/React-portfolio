@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.css';
 import { Link } from 'react-router-dom'
-
+const resume = 'https://docs.google.com/document/d/1wH4ehkXYX_VLyganLQV6-lgaMwpTt5xjxtkCKTw8W3Q/view?usp=sharing'
 const Header = () => {
     return (
         <div className='header-container'>
@@ -24,10 +24,11 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/contactMe">Contact Me</a>
+                                <Link className="nav-link" to="/contact">Contact
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/resume">Resume</a>
+                                <a className="nav-link" href={resume}>Resume</a>
                             </li>
                         </ul>
                     </div>
