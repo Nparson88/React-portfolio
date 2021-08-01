@@ -23,7 +23,7 @@ Contact me by the following for any questions:
 * Github:(https://github.com/Nparson88)
 * Email: Nparson88@gmail.com 
 ## Screenshots
-* ![screenshot](portfoliopic.jpg)
+* ![screenshot](./images/portfoliopic.jpg)
 
 ## Deployed app
 * gh-pages: (https://nparson88.github.io/React-portfolio/)
